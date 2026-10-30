@@ -1,15 +1,14 @@
-# Digitális EC2 vasbeton segédlet – v2.3
+# Digitális EC2 vasbeton segédlet v2.4
 
-Statikus Vercel-kompatibilis alkalmazás. A 76 oldalas PDF a `assets/vasbeton-segedlet.pdf` fájlban, az automatikusan kinyert szövegindex a `data/pages.json` fájlban található. A PDF állandóan online, nem kell kézzel feltölteni a megnyitásakor.
+GitHub/Vercel statikus változat. `index.html` a teljes alkalmazás, `assets/vasbeton-segedlet.pdf` a PDF, `data/pages.json` az OCR alapú keresőindex.
+
+## Új modulok
+6.3 Nyírás; 6.4 Csavarás; 6.5.1 Tartóvég; 6.8 Átszúródás; 6.9 Rövidkonzol; 8 Szerkesztési szabályok (részleges).
+
+Ezek részmodellként kerültek be. A 2007-es segédletre épülnek, nem teljes aktuális EC2 szabványos méretezések. Ellenőrzőlista, validálás, anyagfüggő/szerkezettípus-függő részletszabályok bővítése szükséges. Az átszúródás szél-/sarokkerületei, nyílások, nyomatékoszlop hatás, nyírási- és csavarási kombinált vasalás külön méretezendő.
 
 ## Telepítés
+A repository gyökerébe töltsd fel a ZIP tartalmát. A Vercel `Other` keretrendszerrel, build parancs nélkül futtatja.
 
-A ZIP **tartalmát** töltsd a GitHub repository gyökerébe, a jelenlegi `index.html` és PDF frissítésével. Vercel: Framework Preset = Other, Build Command üres, Output Directory üres (root).
-
-## Funkciók
-
-- Fejezetjegyzék és az eredeti PDF közvetlen megnyitása
-- Oldalankénti szövegkeresés, találati előnézet és PDF-oldalra ugrás
-- Beton- és betonacél-táblázatok, egyszeresen vasalt téglalap hajlítási prototípus
-
-**Korlát:** az index automatizált szövegkinyerésből származik, sok oldalon elforgatott vagy hibás. Képletellenőrzésre nem használható. A dokumentum nyilvános megosztásához a felhasználási jogokat tisztázni kell.
+## Felhasználás
+A forrás-PDF szerzői jogi helyzetét tisztázni kell a nyilvános telepítés előtt.
